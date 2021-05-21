@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <main id="game">
+    <h1>SNAKE GAME! 🐍</h1>
+    <canvas id="snake" width="512" height="512"></canvas>
+  </main>
+  <div class="contents-asside">
+    <aside id="options-side">
+      <div class="options-side_lifes">
+        <h3>Lifes <span class="about">?</span></h3>
+        <img src="./assets/images/full-heart.png" alt="Full Heart" class="hearts life-1">
+        <img src="./assets/images/full-heart.png" alt="Full Heart" class="hearts life-2">
+        <img src="./assets/images/full-heart.png" alt="Full Heart" class="hearts life-3">
+        <img src="./assets/images/full-heart.png" alt="Full Heart" class="hearts life-4">
+        <img src="./assets/images/full-heart.png" alt="Full Heart" class="hearts life-5">
+      </div>
+      <div class="options-side_level">
+        <h3>Level</h3>
+        <input type="button" id="level-1" class="level-select" value="1">
+        <input type="button" id="level-2" value="2">
+        <input type="button" id="level-3" value="3">
+        <input type="button" id="level-4" value="4">
+        <input type="button" id="level-5" value="5">
+      </div>
+      <div class="options-side_colors">
+        <h3>Color your snake</h3>
+        <div class="icons-colors">
+          <img class="icon-green img-select" data-color="green" src="./assets/images/icon-green.png" alt="Color green">
+          <img class="icon-blue" data-color="blue" src="./assets/images/icon-lightblue.png" alt="Color blue">
+          <img class="icon-pink" data-color="pink" src="./assets/images/icon-pink.png" alt="Color pink">
+          <img class="icon-yellow" data-color="yellow" src="./assets/images/icon-yellow.png" alt="Color yellow">
+        </div>
+      </div>
+      <div class="score-game">
+        <p>Score:<span id="score">0</span></p>
+      </div>
+      <div class="start-game">
+        <p>Start Game</p>
+      </div>
+    </aside>
+    <footer class="footer">
+      <p>By <a href="#">Anderson Leite</a></p>
+    </footer>
+  </div>
+  <div class="game-over">
+    <p>Game Over</p>
+    <p class="text">press f5 to restart</p>
+  </div>
+  <div class="tutorial">
+    <h3>Tutorial</h3>
+    <img src="./assets/images/keys.jpg" alt="Keys image">
+    <p>Press the image keys to make the snake change direction</p>
+    <span class="close">X</span>
+  </div>
+</body>
+</html>
