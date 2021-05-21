@@ -1,0 +1,197 @@
+:root{
+  --vermelho:#E50914;
+  --preta:#141414;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+  background: var(--preta);
+  font-family: 'Roboto', sans-serif;
+  color:white;
+}
+
+header .container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo{
+  margin-left: .3rem;
+  color: var(--vermelho);
+  font-family: 'Noto Serif', serif;
+  font-size:2.4rem;
+}
+
+header nav a{
+  text-decoration:none;
+  color:#AAA;
+  margin-right: .9rem;
+  padding: .1rem;
+  transition: .3s ease all;
+}
+
+header nav a:hover {
+  color:#fff;
+}
+
+nav:last-child {
+  margin-right: .9rem;
+}
+
+nav #search {
+  cursor: pointer;
+  padding: 0 .3rem;
+}
+
+#search input {
+  border-width: 0;
+  border-radius: .1rem;
+  padding-left: .2rem;
+  height: 1.3rem;
+}
+
+#search input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.film-main{
+  font-size:1.1rem;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/assets/img/Trailer.gif');
+
+  height:85vh;
+  background-size:cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.film-main .description{
+  margin-top: .8rem;
+  margin-bottom: 3rem;
+}
+
+.film-main .title{
+  margin-top: 15%;
+  font-size: 3rem;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button{
+  background-color: rgba(0,0,0,.50);
+  border:none;
+  color: white;
+
+  padding:1.1rem 1.8rem;
+  margin-right: 1.2rem;
+  font-size: .9rem;
+
+  cursor: pointer;
+  transform: scale(.9);
+  transition: .3s ease all;
+}
+
+.button:hover{
+  background-color:white;
+  color:black;
+  transform: scale(1);
+}
+
+.button i{
+  margin-right: .5rem;
+}
+
+.container{
+  margin-left: 1.8rem;
+}
+
+.film-main .container{
+  width: 70%;
+}
+
+.box-film{
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.carrosel-films{
+  margin-top:5px;
+}
+
+/* -------------- */
+.item {
+  position: relative;
+}
+
+.item {
+  transition:all 0.3s ease;
+}
+
+.item:hover {
+  webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.1);
+}
+
+.item a {
+  display: none;
+}
+
+.item:hover a {
+  position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0, 0.8);
+
+  display: flex;
+  cursor: pointer;
+
+  webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.item a i {
+  transition:all 0.3s ease;
+
+  webkit-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
+.item a i:hover {
+  webkit-transform: scale(2.3);
+  -ms-transform: scale(2.3);
+  transform: scale(2.3);
+}
+
+
+/* ------------------ */
+.category {
+  margin: .8rem 0.5rem;
+  padding-top: .3rem;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: none;
+}
